@@ -10,13 +10,13 @@ export const getPokemon = () => (dispatch) => {
   const randomId = Math.round(Math.random() * 1000);
 
   axios
-    .get("https://pokeapi.co/api/v2/pokemon/")
+    .get(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
     .then((res) => {
       console.log(res);
 
       dispatch({
         type: FETCHING_POKEMON_SUCCESS,
-        payload: res.data.({randomId}),
+        payload: res.data.name,
       });
     })
     .catch((err) => {

@@ -17,8 +17,9 @@ const PokePage = ({ getPokemon, pokemon, isFetching, error }) => {
   } else {
     return (
       <div>
+        <h2>Begin your quest to become the ultimate Pokémon master!</h2>
         <h2>{pokemon}</h2>
-        <button onClick={getPokemon}>Get Pokemon</button>
+        <button onClick={getPokemon}>Get Pokémon</button>
       </div>
     );
   }
