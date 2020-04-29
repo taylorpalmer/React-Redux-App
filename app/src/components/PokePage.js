@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 import { getPokemon } from "../actions/actions";
+import { StyledBtn } from "../styles/styles";
 
 const PokePage = ({ getPokemon, pokemon, isFetching, error }) => {
   if (error !== "")
@@ -17,8 +18,8 @@ const PokePage = ({ getPokemon, pokemon, isFetching, error }) => {
   } else {
     return (
       <div>
-        <h2>Begin your quest to become the ultimate Pokémon master!</h2>
-        <h2>{pokemon}</h2>
+        <h2>Become the ultimate Pokémon master!</h2>
+        <h3>{pokemon}</h3>
         <button onClick={getPokemon}>Get Pokémon</button>
       </div>
     );

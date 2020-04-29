@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  height: 100vh;
+  background-color: #ef5350;
+}
+
+button {
+  color: #fff;
+  background-color: #1b95e0;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #fff;
+}
+
+div .App {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

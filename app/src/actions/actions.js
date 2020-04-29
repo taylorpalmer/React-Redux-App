@@ -7,7 +7,7 @@ export const FETCHING_POKEMON_FAILURE = "FETCHING_POKEMON_FAILURE";
 export const getPokemon = () => (dispatch) => {
   dispatch({ type: FETCHING_POKEMON_START });
 
-  const randomId = Math.round(Math.random() * 1000);
+  const randomId = Math.round(Math.random() * 500);
 
   axios
     .get(`https://pokeapi.co/api/v2/pokemon/${randomId}`)
