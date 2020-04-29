@@ -1,13 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { createStore, applyMiddleware } from "redux";
-import { Provider } from "react-redux";
-import thunk from "redux-thunk";
 
 import "./App.css";
+import PokePage from "./components/PokePage";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <PokePage />
+    </div>
+  );
 }
 
 export default App;
