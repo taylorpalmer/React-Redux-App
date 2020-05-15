@@ -19,8 +19,8 @@ export const getPokemon = () => (dispatch) => {
         payload: res.data.name,
       });
     })
-    .catch((err) => {
-      console.log(err);
+    .catch((error) => {
+      console.log(error);
 
       dispatch({
         type: FETCHING_POKEMON_FAILURE,
